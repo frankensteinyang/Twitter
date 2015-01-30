@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF36CC401A768521008A745B"
-               BuildableName = "CALayer.app"
-               BlueprintName = "CALayer"
-               ReferencedContainer = "container:CALayer.xcodeproj">
+               BlueprintIdentifier = "EF2E774E1A7BD803007DE341"
+               BuildableName = "Twitter.app"
+               BlueprintName = "Twitter"
+               ReferencedContainer = "container:Twitter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF36CC591A768521008A745B"
-               BuildableName = "CALayerTests.xctest"
-               BlueprintName = "CALayerTests"
-               ReferencedContainer = "container:CALayer.xcodeproj">
+               BlueprintIdentifier = "EF2E77671A7BD804007DE341"
+               BuildableName = "TwitterTests.xctest"
+               BlueprintName = "TwitterTests"
+               ReferencedContainer = "container:Twitter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF36CC591A768521008A745B"
-               BuildableName = "CALayerTests.xctest"
-               BlueprintName = "CALayerTests"
-               ReferencedContainer = "container:CALayer.xcodeproj">
+               BlueprintIdentifier = "EF2E77671A7BD804007DE341"
+               BuildableName = "TwitterTests.xctest"
+               BlueprintName = "TwitterTests"
+               ReferencedContainer = "container:Twitter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EF36CC401A768521008A745B"
-            BuildableName = "CALayer.app"
-            BlueprintName = "CALayer"
-            ReferencedContainer = "container:CALayer.xcodeproj">
+            BlueprintIdentifier = "EF2E774E1A7BD803007DE341"
+            BuildableName = "Twitter.app"
+            BlueprintName = "Twitter"
+            ReferencedContainer = "container:Twitter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EF36CC401A768521008A745B"
-            BuildableName = "CALayer.app"
-            BlueprintName = "CALayer"
-            ReferencedContainer = "container:CALayer.xcodeproj">
+            BlueprintIdentifier = "EF2E774E1A7BD803007DE341"
+            BuildableName = "Twitter.app"
+            BlueprintName = "Twitter"
+            ReferencedContainer = "container:Twitter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EF36CC401A768521008A745B"
-            BuildableName = "CALayer.app"
-            BlueprintName = "CALayer"
-            ReferencedContainer = "container:CALayer.xcodeproj">
+            BlueprintIdentifier = "EF2E774E1A7BD803007DE341"
+            BuildableName = "Twitter.app"
+            BlueprintName = "Twitter"
+            ReferencedContainer = "container:Twitter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

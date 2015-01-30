@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CALayer.xcscheme</key>
+		<key>Twitter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>EF36CC401A768521008A745B</key>
+		<key>EF2E774E1A7BD803007DE341</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF36CC591A768521008A745B</key>
+		<key>EF2E77671A7BD804007DE341</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,19 +1,19 @@
 //
-//  CALayerTests.m
-//  CALayerTests
+//  TwitterTests.m
+//  TwitterTests
 //
-//  Created by Frankenstein Yang on 1/26/15.
+//  Created by Frankenstein Yang on 1/30/15.
 //  Copyright (c) 2015 Frankenstein Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface CALayerTests : XCTestCase
+@interface TwitterTests : XCTestCase
 
 @end
 
-@implementation CALayerTests
+@implementation TwitterTests
 
 - (void)setUp {
     [super setUp];
