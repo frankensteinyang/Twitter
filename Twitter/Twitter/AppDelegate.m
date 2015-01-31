@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TwitterTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -22,8 +23,7 @@
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     // 设置窗口的根控制器
-    UITabBarController *tabBarC = [[UITabBarController alloc] init];
-    self.window.rootViewController = tabBarC;
+    self.window.rootViewController = [[TwitterTabBarController alloc] init];
     // 显示窗口（成为主窗口）
     [self.window makeKeyAndVisible];
     

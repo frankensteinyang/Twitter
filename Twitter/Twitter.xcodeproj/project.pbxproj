@@ -12,6 +12,7 @@
 		EF2E77601A7BD803007DE341 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2E775F1A7BD803007DE341 /* Images.xcassets */; };
 		EF2E77631A7BD803007DE341 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E77611A7BD803007DE341 /* LaunchScreen.xib */; };
 		EF2E776F1A7BD804007DE341 /* TwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E776E1A7BD804007DE341 /* TwitterTests.m */; };
+		EFB3B36A1A7D2B5800A37D53 /* TwitterTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		EF2E77681A7BD804007DE341 /* TwitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2E776D1A7BD804007DE341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF2E776E1A7BD804007DE341 /* TwitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterTests.m; sourceTree = "<group>"; };
+		EFB3B3681A7D2B5800A37D53 /* TwitterTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterTabBarController.h; sourceTree = "<group>"; };
+		EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				EF2E775F1A7BD803007DE341 /* Images.xcassets */,
 				EF2E77611A7BD803007DE341 /* LaunchScreen.xib */,
 				EF2E77521A7BD803007DE341 /* Supporting Files */,
+				EFB3B3681A7D2B5800A37D53 /* TwitterTabBarController.h */,
+				EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			files = (
 				EF2E77581A7BD803007DE341 /* AppDelegate.m in Sources */,
 				EF2E77551A7BD803007DE341 /* main.m in Sources */,
+				EFB3B36A1A7D2B5800A37D53 /* TwitterTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +400,7 @@
 				EF2E77741A7BD804007DE341 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF2E77751A7BD804007DE341 /* Build configuration list for PBXNativeTarget "TwitterTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +409,7 @@
 				EF2E77771A7BD804007DE341 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
