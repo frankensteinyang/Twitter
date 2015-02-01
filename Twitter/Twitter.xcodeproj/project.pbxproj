@@ -12,6 +12,7 @@
 		EF2E77601A7BD803007DE341 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2E775F1A7BD803007DE341 /* Images.xcassets */; };
 		EF2E77631A7BD803007DE341 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E77611A7BD803007DE341 /* LaunchScreen.xib */; };
 		EF2E776F1A7BD804007DE341 /* TwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E776E1A7BD804007DE341 /* TwitterTests.m */; };
+		EFA742011A7E7EA900D1E11C /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA742001A7E7EA900D1E11C /* UIImage+Extension.m */; };
 		EFB3B36A1A7D2B5800A37D53 /* TwitterTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,9 @@
 		EF2E77681A7BD804007DE341 /* TwitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2E776D1A7BD804007DE341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF2E776E1A7BD804007DE341 /* TwitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterTests.m; sourceTree = "<group>"; };
+		EFA741FB1A7E791300D1E11C /* Twitter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Twitter-Prefix.pch"; sourceTree = "<group>"; };
+		EFA741FF1A7E7EA900D1E11C /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		EFA742001A7E7EA900D1E11C /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		EFB3B3681A7D2B5800A37D53 /* TwitterTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterTabBarController.h; sourceTree = "<group>"; };
 		EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +83,7 @@
 		EF2E77511A7BD803007DE341 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				EFA742031A7E802500D1E11C /* Classes */,
 				EF2E77561A7BD803007DE341 /* AppDelegate.h */,
 				EF2E77571A7BD803007DE341 /* AppDelegate.m */,
 				EF2E775F1A7BD803007DE341 /* Images.xcassets */,
@@ -86,6 +91,8 @@
 				EF2E77521A7BD803007DE341 /* Supporting Files */,
 				EFB3B3681A7D2B5800A37D53 /* TwitterTabBarController.h */,
 				EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */,
+				EFA741FF1A7E7EA900D1E11C /* UIImage+Extension.h */,
+				EFA742001A7E7EA900D1E11C /* UIImage+Extension.m */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 			children = (
 				EF2E77531A7BD803007DE341 /* Info.plist */,
 				EF2E77541A7BD803007DE341 /* main.m */,
+				EFA741FB1A7E791300D1E11C /* Twitter-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -114,6 +122,37 @@
 				EF2E776D1A7BD804007DE341 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFA742031A7E802500D1E11C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EFA742041A7E802500D1E11C /* Home */,
+				EFA742051A7E802500D1E11C /* Main */,
+				EFA742061A7E802500D1E11C /* Message */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EFA742041A7E802500D1E11C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EFA742051A7E802500D1E11C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EFA742061A7E802500D1E11C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA742011A7E7EA900D1E11C /* UIImage+Extension.m in Sources */,
 				EF2E77581A7BD803007DE341 /* AppDelegate.m in Sources */,
 				EF2E77551A7BD803007DE341 /* main.m in Sources */,
 				EFB3B36A1A7D2B5800A37D53 /* TwitterTabBarController.m in Sources */,
@@ -274,6 +314,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -314,6 +355,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -332,6 +374,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Twitter/Twitter-Prefix.pch";
 				INFOPLIST_FILE = Twitter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -343,6 +387,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Twitter/Twitter-Prefix.pch";
 				INFOPLIST_FILE = Twitter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

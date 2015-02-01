@@ -23,11 +23,21 @@
     message.tabBarItem.title = @"消息";
     [self addChildViewController:message];
     
+    UIViewController *discover = [[UIViewController alloc] init];
+    discover.view.backgroundColor = [UIColor blueColor];
+    discover.tabBarItem.title = @"发现";
+    [self addChildViewController:discover];
+    
+    UIViewController *myInfo = [[UIViewController alloc] init];
+    myInfo.view.backgroundColor = [UIColor brownColor];
+    myInfo.tabBarItem.title = @"我";
+    [self addChildViewController:myInfo];
+    
 }
 
 - (void)addOneChildVC:(UIViewController *)childVC title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName {
 
-    childVC.view.backgroundColor = [UIColor grayColor];
+    childVC.view.backgroundColor = TwitterRandomColor;
     childVC.tabBarItem.title = title;
     childVC.tabBarItem.image = [UIImage imageNamed:imageName];
     childVC.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName];

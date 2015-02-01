@@ -1,0 +1,21 @@
+//
+//  Twitter-Prefix.pch
+//  Twitter
+//
+//  Created by Frankenstein Yang on 2/1/15.
+//  Copyright (c) 2015 Frankenstein Yang. All rights reserved.
+//
+
+#ifndef Twitter_Twitter_Prefix_pch
+#define Twitter_Twitter_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 随机色
+#define TwitterRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+// 是否为iOS7
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+#endif
