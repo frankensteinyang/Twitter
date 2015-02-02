@@ -15,6 +15,7 @@
 		EFA742011A7E7EA900D1E11C /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA742001A7E7EA900D1E11C /* UIImage+Extension.m */; };
 		EFB3B36A1A7D2B5800A37D53 /* TwitterTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */; };
 		EFE2B7401A7FD22C000A534E /* TwitterMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE2B73F1A7FD22C000A534E /* TwitterMessageViewController.m */; };
+		EFE2B74F1A7FD7DC000A534E /* TwitterHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE2B74E1A7FD7DC000A534E /* TwitterHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTabBarController.m; sourceTree = "<group>"; };
 		EFE2B73E1A7FD22C000A534E /* TwitterMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterMessageViewController.h; sourceTree = "<group>"; };
 		EFE2B73F1A7FD22C000A534E /* TwitterMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterMessageViewController.m; sourceTree = "<group>"; };
+		EFE2B74D1A7FD7DC000A534E /* TwitterHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterHomeViewController.h; sourceTree = "<group>"; };
+		EFE2B74E1A7FD7DC000A534E /* TwitterHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,30 +133,18 @@
 		EFA742031A7E802500D1E11C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EFA742041A7E802500D1E11C /* Home */,
-				EFA742051A7E802500D1E11C /* Main */,
+				EFE2B7491A7FD793000A534E /* Home */,
+				EFE2B7431A7FD6D6000A534E /* Main */,
 				EFA742061A7E802500D1E11C /* Message */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		EFA742041A7E802500D1E11C /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		EFA742051A7E802500D1E11C /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		EFA742061A7E802500D1E11C /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				EFE2B7421A7FD64C000A534E /* View */,
+				EFE2B7411A7FD646000A534E /* Model */,
 				EFE2B73D1A7FD16E000A534E /* Controller */,
 			);
 			path = Message;
@@ -166,6 +157,100 @@
 				EFE2B73F1A7FD22C000A534E /* TwitterMessageViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFE2B7411A7FD646000A534E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFE2B7421A7FD64C000A534E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFE2B7431A7FD6D6000A534E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EFE2B7441A7FD6D6000A534E /* Category */,
+				EFE2B7451A7FD6D6000A534E /* Controller */,
+				EFE2B7461A7FD6D6000A534E /* Model */,
+				EFE2B7471A7FD6D6000A534E /* Other */,
+				EFE2B7481A7FD6D6000A534E /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EFE2B7441A7FD6D6000A534E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EFE2B7451A7FD6D6000A534E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFE2B7461A7FD6D6000A534E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFE2B7471A7FD6D6000A534E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EFE2B7481A7FD6D6000A534E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFE2B7491A7FD793000A534E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EFE2B74A1A7FD793000A534E /* Controller */,
+				EFE2B74B1A7FD793000A534E /* Model */,
+				EFE2B74C1A7FD793000A534E /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EFE2B74A1A7FD793000A534E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFE2B74D1A7FD7DC000A534E /* TwitterHomeViewController.h */,
+				EFE2B74E1A7FD7DC000A534E /* TwitterHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFE2B74B1A7FD793000A534E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFE2B74C1A7FD793000A534E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFA742011A7E7EA900D1E11C /* UIImage+Extension.m in Sources */,
+				EFE2B74F1A7FD7DC000A534E /* TwitterHomeViewController.m in Sources */,
 				EF2E77581A7BD803007DE341 /* AppDelegate.m in Sources */,
 				EFE2B7401A7FD22C000A534E /* TwitterMessageViewController.m in Sources */,
 				EF2E77551A7BD803007DE341 /* main.m in Sources */,
