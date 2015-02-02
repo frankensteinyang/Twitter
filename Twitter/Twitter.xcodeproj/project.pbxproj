@@ -14,6 +14,7 @@
 		EF2E776F1A7BD804007DE341 /* TwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E776E1A7BD804007DE341 /* TwitterTests.m */; };
 		EFA742011A7E7EA900D1E11C /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA742001A7E7EA900D1E11C /* UIImage+Extension.m */; };
 		EFB3B36A1A7D2B5800A37D53 /* TwitterTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */; };
+		EFE2B7401A7FD22C000A534E /* TwitterMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE2B73F1A7FD22C000A534E /* TwitterMessageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		EFA742001A7E7EA900D1E11C /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		EFB3B3681A7D2B5800A37D53 /* TwitterTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterTabBarController.h; sourceTree = "<group>"; };
 		EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTabBarController.m; sourceTree = "<group>"; };
+		EFE2B73E1A7FD22C000A534E /* TwitterMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterMessageViewController.h; sourceTree = "<group>"; };
+		EFE2B73F1A7FD22C000A534E /* TwitterMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterMessageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +154,18 @@
 		EFA742061A7E802500D1E11C /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				EFE2B73D1A7FD16E000A534E /* Controller */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		EFE2B73D1A7FD16E000A534E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFE2B73E1A7FD22C000A534E /* TwitterMessageViewController.h */,
+				EFE2B73F1A7FD22C000A534E /* TwitterMessageViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +269,7 @@
 			files = (
 				EFA742011A7E7EA900D1E11C /* UIImage+Extension.m in Sources */,
 				EF2E77581A7BD803007DE341 /* AppDelegate.m in Sources */,
+				EFE2B7401A7FD22C000A534E /* TwitterMessageViewController.m in Sources */,
 				EF2E77551A7BD803007DE341 /* main.m in Sources */,
 				EFB3B36A1A7D2B5800A37D53 /* TwitterTabBarController.m in Sources */,
 			);
