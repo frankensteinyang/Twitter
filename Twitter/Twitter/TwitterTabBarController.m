@@ -14,34 +14,56 @@
 
     // 添加子控制器
     UIViewController *home = [[UIViewController alloc] init];
-    home.view.backgroundColor = [UIColor yellowColor];
-    home.tabBarItem.title = @"首页";
-    [self addChildViewController:home];
+    [self addOneChildVC:home title:@"Home" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
     
     UIViewController *message = [[UIViewController alloc] init];
-    message.view.backgroundColor = [UIColor purpleColor];
-    message.tabBarItem.title = @"消息";
-    [self addChildViewController:message];
+    [self addOneChildVC:message title:@"Message" imageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
     
     UIViewController *discover = [[UIViewController alloc] init];
-    discover.view.backgroundColor = [UIColor blueColor];
-    discover.tabBarItem.title = @"发现";
-    [self addChildViewController:discover];
+    [self addOneChildVC:discover title:@"Discover" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
     
     UIViewController *myInfo = [[UIViewController alloc] init];
-    myInfo.view.backgroundColor = [UIColor brownColor];
-    myInfo.tabBarItem.title = @"我";
-    [self addChildViewController:myInfo];
+    [self addOneChildVC:myInfo title:@"Me" imageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
     
 }
 
+/**
+ *  添加一个子控制器
+ *
+ *  @param childVC           自控制器对象
+ *  @param title             标题
+ *  @param imageName         图标
+ *  @param selectedImageName 选中的图标
+ */
 - (void)addOneChildVC:(UIViewController *)childVC title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName {
 
     childVC.view.backgroundColor = TwitterRandomColor;
     childVC.tabBarItem.title = title;
-    childVC.tabBarItem.image = [UIImage imageNamed:imageName];
-    childVC.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName];
+    childVC.tabBarItem.image = [self imageWithName:imageName];
+    UIImage *selectedImage = [self imageWithName:selectedImageName];
+    
+    if (iOS7) {
+        // 声明这张图片用原图（别渲染）
+        selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }
+    childVC.tabBarItem.selectedImage = selectedImage;
     [self addChildViewController:childVC];
+    
+}
+
+- (UIImage *)imageWithName:(NSString *)name {
+
+    UIImage *image = nil;
+    if (iOS7) {
+        NSString *newName = [name stringByAppendingString:@"_os7"];
+        image = [UIImage imageNamed:newName];
+    }
+    
+    if (image == nil) {
+        image = [UIImage imageNamed:name];
+    }
+    
+    return image;
     
 }
 
