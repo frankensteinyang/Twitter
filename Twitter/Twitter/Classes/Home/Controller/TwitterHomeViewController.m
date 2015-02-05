@@ -33,4 +33,24 @@
     
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"Frankenstein! %d", indexPath.row];
+    return cell;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    UIViewController *newVC = [[UIViewController alloc] init];
+    newVC.view.backgroundColor = [UIColor redColor];
+    [self.navigationController pushViewController:newVC animated:YES];
+
+}
+
 @end
