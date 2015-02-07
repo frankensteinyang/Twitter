@@ -15,7 +15,15 @@
  */
 + (void)initialize {
     
+    [self setupBarButtonItemTheme];
     
+}
+
++ (void)setupBarButtonItemTheme {
+
+    UIBarButtonItem *appearance = [UIBarButtonItem appearance];
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+//    textAttrs[UITextAttributeTextColor] = [UIColor orangeColor];
     
 }
 
