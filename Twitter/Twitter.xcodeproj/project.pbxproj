@@ -12,6 +12,7 @@
 		EF2E77601A7BD803007DE341 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2E775F1A7BD803007DE341 /* Images.xcassets */; };
 		EF2E77631A7BD803007DE341 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E77611A7BD803007DE341 /* LaunchScreen.xib */; };
 		EF2E776F1A7BD804007DE341 /* TwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E776E1A7BD804007DE341 /* TwitterTests.m */; };
+		EF95B5F81A890A780040B43E /* TwitterNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF95B5F71A890A780040B43E /* TwitterNavigationController.m */; };
 		EFA35AD61A86682D00C63C70 /* TwitterTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA35AD51A86682D00C63C70 /* TwitterTabBarViewController.m */; };
 		EFA742011A7E7EA900D1E11C /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA742001A7E7EA900D1E11C /* UIImage+Extension.m */; };
 		EFB3B36A1A7D2B5800A37D53 /* TwitterTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB3B3691A7D2B5800A37D53 /* TwitterTabBarController.m */; };
@@ -40,6 +41,8 @@
 		EF2E77681A7BD804007DE341 /* TwitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2E776D1A7BD804007DE341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF2E776E1A7BD804007DE341 /* TwitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterTests.m; sourceTree = "<group>"; };
+		EF95B5F61A890A780040B43E /* TwitterNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterNavigationController.h; sourceTree = "<group>"; };
+		EF95B5F71A890A780040B43E /* TwitterNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterNavigationController.m; sourceTree = "<group>"; };
 		EFA35AD41A86682D00C63C70 /* TwitterTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterTabBarViewController.h; sourceTree = "<group>"; };
 		EFA35AD51A86682D00C63C70 /* TwitterTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTabBarViewController.m; sourceTree = "<group>"; };
 		EFA741FB1A7E791300D1E11C /* Twitter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Twitter-Prefix.pch"; sourceTree = "<group>"; };
@@ -200,6 +203,8 @@
 			children = (
 				EFA35AD41A86682D00C63C70 /* TwitterTabBarViewController.h */,
 				EFA35AD51A86682D00C63C70 /* TwitterTabBarViewController.m */,
+				EF95B5F61A890A780040B43E /* TwitterNavigationController.h */,
+				EF95B5F71A890A780040B43E /* TwitterNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 				EFE2B7401A7FD22C000A534E /* TwitterMessageViewController.m in Sources */,
 				EF2E77551A7BD803007DE341 /* main.m in Sources */,
 				EFB3B36A1A7D2B5800A37D53 /* TwitterTabBarController.m in Sources */,
+				EF95B5F81A890A780040B43E /* TwitterNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
