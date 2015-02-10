@@ -25,6 +25,16 @@
     
 //    self.navigationItem.rightBarButtonItem = [UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
     
+    UIBarButtonItem *appearance = [UIBarButtonItem appearance];
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[UITextAttributeTextColor] = [UIColor orangeColor];
+    textAttrs[UITextAttributeFont] = [UIFont systemFontOfSize:15];
+    [appearance setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
+    
+    NSMutableDictionary *highTextAttrs = [NSMutableDictionary dictionary];
+    highTextAttrs[UITextAttributeTextColor] = [UIColor redColor];
+    highTextAttrs[UITextAttributeFont] = [UIFont systemFontOfSize:15];
+    [appearance setTitleTextAttributes:highTextAttrs forState:UIControlStateHighlighted];
     
 }
 
@@ -32,6 +42,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     return 10;
+    
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    return cell;
     
 }
 
